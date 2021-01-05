@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab01/lab01/build",
+  "command": "/usr/bin/clang++  -I\"/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab01/lab01\" -isystem /usr/local/include/opencv4 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -mmacosx-version-min=10.15 -std=gnu++14 -o CMakeFiles/lab01.dir/main.cpp.o -c \"/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab01/lab01/main.cpp\"",
+  "file": "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab01/lab01/main.cpp"
+},
+{
+  "directory": "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab01/lab01/build",
+  "command": "/usr/bin/clang++  -I\"/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab01/lab01\" -isystem /usr/local/include/opencv4 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -mmacosx-version-min=10.15 -std=gnu++14 -o CMakeFiles/lab01.dir/Converter.cpp.o -c \"/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab01/lab01/Converter.cpp\"",
+  "file": "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab01/lab01/Converter.cpp"
+},
+{
+  "directory": "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab01/lab01/build",
+  "command": "/usr/bin/clang++  -I\"/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab01/lab01\" -isystem /usr/local/include/opencv4 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -mmacosx-version-min=10.15 -std=gnu++14 -o CMakeFiles/lab01.dir/ColorTransformer.cpp.o -c \"/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab01/lab01/ColorTransformer.cpp\"",
+  "file": "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab01/lab01/ColorTransformer.cpp"
+}
+]
