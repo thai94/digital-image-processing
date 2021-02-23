@@ -107,7 +107,8 @@ void rgb2hsv(float red, float green, float blue)
 int main(int, char **)
 {
 
-    Mat sourceImage = imread("./../test4.jpg");
+    Mat sourceImage = imread("./../test2.jpg");
+    Mat sourceImage2 = imread("./../test6.jpg");
     
     Mat grayImage;
     // Mat rgbImage;
@@ -131,8 +132,9 @@ int main(int, char **)
     // colorTransformer.ChangeBrighness(grayImage, brighterImage, 50);
     // colorTransformer.ChangeContrast(sourceImage, contrasterImage, 300);
     // imshow("Color Image", contrasterImage);
-    colorTransformer.CalcHistogram(grayImage, histMatrix);
+    colorTransformer.CalcHistogram(sourceImage, histMatrix);
     colorTransformer.DrawHistogram(histMatrix, histImage);
     imshow("Hist Image", histImage);
+    cout << "Similar: " << colorTransformer.CompareImage(sourceImage, sourceImage2) << " %";
     waitKey(0);
 }

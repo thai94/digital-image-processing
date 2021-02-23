@@ -147,7 +147,7 @@ int ColorTransformer::DrawHistogram(const Mat &histMatrix, Mat &histImage)
 
         for (int i = 0; i < colorNum; i++)
         {
-            line(histImage, Point(marginLeft + bin * (i), chartHeight * (k + 1)), Point(marginLeft + bin * (i), (k + 1) * chartHeight - cvRound(pRow[i] * 15000)), scalar, 2, 8, 0);
+            line(histImage, Point(marginLeft + bin * (i), chartHeight * (k + 1)), Point(marginLeft + bin * (i), (k + 1) * chartHeight - cvRound(pRow[i] * 5000)), scalar, 2, 8, 0);
         }
     }
     return 1;
@@ -155,5 +155,24 @@ int ColorTransformer::DrawHistogram(const Mat &histMatrix, Mat &histImage)
 
 float ColorTransformer::CompareImage(const Mat &image1, Mat &image2)
 {
-    return -1;
+    Mat histMatrix1;
+    Mat histMatrix2;
+
+    this->CalcHistogram(image1, histMatrix1);
+    this->CalcHistogram(image2, histMatrix2);
+
+    int chanels = histMatrix1.rows;
+    int colorNum = histMatrix2.cols;
+
+    float sum = 0;
+    for (int i = 0; i < chanels; i++) {
+        float *pChanelImage1 = histMatrix1.ptr<float>(i);
+        float *pChanelImage2 = histMatrix2.ptr<float>(i);
+
+        for (int bin = 0; bin < colorNum; bin++) {
+            sum += min(pChanelImage1[bin], pChanelImage2[bin]);
+        }
+    }
+
+    return sum * 100 / (float)chanels;
 }
