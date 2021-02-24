@@ -3,8 +3,16 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/core/core.hpp>
+#include <math.h>
 
 using namespace cv;
+
+struct RgbColor {
+    uchar red;
+    uchar green;
+    uchar blue;
+};
+
 class ColorTransformer
 {
 public:
@@ -78,5 +86,7 @@ public:
 		độ đo sự tương đồng giữa hai ảnh
 	*/
 	float CompareImage(const Mat& image1, Mat& image2);
+
+	int ReduceImageColor(const Mat& sourceImage, Mat& destinationImage, RgbColor *paletteColor, int nPalette);
 };
 

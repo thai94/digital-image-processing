@@ -176,3 +176,55 @@ float ColorTransformer::CompareImage(const Mat &image1, Mat &image2)
 
     return sum * 100 / (float)chanels;
 }
+
+int ColorTransformer::ReduceImageColor(const Mat& sourceImage, Mat& destinationImage, RgbColor *paletteColor, int nPalette) {
+    if (sourceImage.empty())
+    {
+        return -1;
+    }
+
+    int rows = sourceImage.rows;
+    int cols = sourceImage.cols;
+    int chanels = sourceImage.channels();
+
+    destinationImage = Mat(rows, cols, CV_MAKETYPE(CV_8U, chanels));
+
+    for (int i = 0; i < rows; i++)
+    {
+        const uchar *pRow = sourceImage.ptr<uchar>(i);
+        uchar *destRow = destinationImage.ptr<uchar>(i);
+        for (int j = 0; j < cols; j++, pRow += chanels, destRow += chanels)
+        {
+            uchar blue = pRow[0];
+            uchar green = pRow[1];
+            uchar red = pRow[2];
+
+            RgbColor rgbColor = RgbColor();
+            rgbColor.blue = blue;
+            rgbColor.green = green;
+            rgbColor.red = red;
+
+            float min = 99999999.0;
+            RgbColor nearestColor;
+            for (int k = 0; k < nPalette; k++) {
+                
+                RgbColor color = paletteColor[k];
+                float diffBlue = rgbColor.blue - color.blue;
+                float diffGreen = rgbColor.green - color.green;
+                float diffRed = rgbColor.red - color.red;
+                float sum = diffBlue * diffBlue + diffGreen * diffGreen + diffRed * diffRed;
+                float norm2 = sqrt(sum);
+                if(norm2 < min) {
+                    min = norm2;
+                    nearestColor = color;
+                }
+            }
+
+            destRow[0] = nearestColor.blue;
+            destRow[1] = nearestColor.green;
+            destRow[2] = nearestColor.red;
+        }
+    }
+
+    return 1;
+}

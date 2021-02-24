@@ -107,7 +107,7 @@ void rgb2hsv(float red, float green, float blue)
 int main(int, char **)
 {
 
-    Mat sourceImage = imread("./../test2.jpg");
+    Mat sourceImage = imread("./../test1.jpg");
     Mat sourceImage2 = imread("./../test6.jpg");
     
     Mat grayImage;
@@ -127,14 +127,47 @@ int main(int, char **)
     Mat contrasterImage;
     Mat histMatrix;
     Mat histImage;
+    Mat fourColorImage;
 
     ColorTransformer colorTransformer = ColorTransformer();
     // colorTransformer.ChangeBrighness(grayImage, brighterImage, 50);
     // colorTransformer.ChangeContrast(sourceImage, contrasterImage, 300);
     // imshow("Color Image", contrasterImage);
-    colorTransformer.CalcHistogram(sourceImage, histMatrix);
-    colorTransformer.DrawHistogram(histMatrix, histImage);
-    imshow("Hist Image", histImage);
-    cout << "Similar: " << colorTransformer.CompareImage(sourceImage, sourceImage2) << " %";
+    // colorTransformer.CalcHistogram(sourceImage, histMatrix);
+    // colorTransformer.DrawHistogram(histMatrix, histImage);
+    // imshow("Hist Image", histImage);
+    // cout << "Similar: " << colorTransformer.CompareImage(sourceImage, sourceImage2) << " %";
+
+    RgbColor *paletteColor = new RgbColor[4];
+    RgbColor color1 = RgbColor();
+    color1.red = 255;
+    color1.green = 0;
+    color1.blue = 0;
+    paletteColor[0] = color1;
+
+    RgbColor color2 = RgbColor();
+    color2.red = 255;
+    color2.green = 255;
+    color2.blue = 0;
+    paletteColor[1] = color2;
+
+    RgbColor color3 = RgbColor();
+    color3.red = 0;
+    color3.green = 255;
+    color3.blue = 0;
+    paletteColor[2] = color3;
+
+    RgbColor color4 = RgbColor();
+    color4.red = 255;
+    color4.green = 0;
+    color4.blue = 255;
+    paletteColor[3] = color4;
+
+    colorTransformer.ReduceImageColor(sourceImage, fourColorImage, paletteColor, 4);
+    imshow("fourColorImage", fourColorImage);
+
+
+
+
     waitKey(0);
 }
