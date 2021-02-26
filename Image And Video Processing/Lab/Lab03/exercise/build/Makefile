@@ -566,6 +566,33 @@ Blur.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab03.dir/build.make CMakeFiles/lab03.dir/Blur.cpp.s
 .PHONY : Blur.cpp.s
 
+Convolution.o: Convolution.cpp.o
+
+.PHONY : Convolution.o
+
+# target to build an object file
+Convolution.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab03.dir/build.make CMakeFiles/lab03.dir/Convolution.cpp.o
+.PHONY : Convolution.cpp.o
+
+Convolution.i: Convolution.cpp.i
+
+.PHONY : Convolution.i
+
+# target to preprocess a source file
+Convolution.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab03.dir/build.make CMakeFiles/lab03.dir/Convolution.cpp.i
+.PHONY : Convolution.cpp.i
+
+Convolution.s: Convolution.cpp.s
+
+.PHONY : Convolution.s
+
+# target to generate assembly for a file
+Convolution.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab03.dir/build.make CMakeFiles/lab03.dir/Convolution.cpp.s
+.PHONY : Convolution.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -636,6 +663,9 @@ help:
 	@echo "... Blur.o"
 	@echo "... Blur.i"
 	@echo "... Blur.s"
+	@echo "... Convolution.o"
+	@echo "... Convolution.i"
+	@echo "... Convolution.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

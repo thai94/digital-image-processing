@@ -6,13 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/Blur.cpp
-Blur.h
 /Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/Blur.h
-vector
+iostream
+-
+opencv2/opencv.hpp
+-
+opencv2/highgui.hpp
+-
+opencv2/core/core.hpp
+-
+math.h
+-
+list
+-
+algorithm
 -
 
-/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/Blur.h
+/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/Convolution.h
 iostream
 -
 opencv2/opencv.hpp
@@ -33,6 +43,8 @@ iostream
 -
 Blur.h
 /Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/Blur.h
+Convolution.h
+/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/Convolution.h
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp
