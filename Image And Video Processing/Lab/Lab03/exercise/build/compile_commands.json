@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/build",
+  "command": "/usr/bin/clang++  -isystem /usr/local/include/opencv4 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -mmacosx-version-min=10.15 -std=gnu++11 -o CMakeFiles/lab03.dir/main.cpp.o -c \"/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/main.cpp\"",
+  "file": "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/main.cpp"
+},
+{
+  "directory": "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/build",
+  "command": "/usr/bin/clang++  -isystem /usr/local/include/opencv4 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -mmacosx-version-min=10.15 -std=gnu++11 -o CMakeFiles/lab03.dir/Blur.cpp.o -c \"/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/Blur.cpp\"",
+  "file": "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/Blur.cpp"
+}
+]
