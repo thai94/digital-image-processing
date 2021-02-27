@@ -23,7 +23,7 @@ int main(int, char**) {
 
     EdgeDetector edgeDetector = EdgeDetector();
     Mat destImage;
-    edgeDetector.DetectEdge(sourceImage, destImage, 5, 5, 3);
+    edgeDetector.DetectEdge(sourceImage, destImage, 5, 5, 4);
 
     imshow("image", destImage);
     waitKey(0);
