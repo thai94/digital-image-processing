@@ -24,7 +24,7 @@ public:
 		1: nếu detect thất bại (không đọc được ảnh input,...)
 	*/
 	int DetectEdge(const Mat& sourceImage, Mat& destinationImage, int kWidth, int kHeight, int method);	
-	EdgeDetector();
-	~EdgeDetector();
+	// EdgeDetector();
+	// ~EdgeDetector();
 };
 

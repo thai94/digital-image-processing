@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/Blur.cpp" "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/build/CMakeFiles/lab03.dir/Blur.cpp.o"
   "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/Convolution.cpp" "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/build/CMakeFiles/lab03.dir/Convolution.cpp.o"
+  "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/EdgeDetector.cpp" "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/build/CMakeFiles/lab03.dir/EdgeDetector.cpp.o"
   "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/main.cpp" "/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/build/CMakeFiles/lab03.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

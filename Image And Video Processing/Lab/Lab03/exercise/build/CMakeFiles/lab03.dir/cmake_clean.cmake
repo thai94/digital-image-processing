@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lab03.dir/Blur.cpp.o"
   "CMakeFiles/lab03.dir/Convolution.cpp.o"
+  "CMakeFiles/lab03.dir/EdgeDetector.cpp.o"
   "CMakeFiles/lab03.dir/main.cpp.o"
   "lab03"
   "lab03.pdb"

@@ -593,6 +593,33 @@ Convolution.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab03.dir/build.make CMakeFiles/lab03.dir/Convolution.cpp.s
 .PHONY : Convolution.cpp.s
 
+EdgeDetector.o: EdgeDetector.cpp.o
+
+.PHONY : EdgeDetector.o
+
+# target to build an object file
+EdgeDetector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab03.dir/build.make CMakeFiles/lab03.dir/EdgeDetector.cpp.o
+.PHONY : EdgeDetector.cpp.o
+
+EdgeDetector.i: EdgeDetector.cpp.i
+
+.PHONY : EdgeDetector.i
+
+# target to preprocess a source file
+EdgeDetector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab03.dir/build.make CMakeFiles/lab03.dir/EdgeDetector.cpp.i
+.PHONY : EdgeDetector.cpp.i
+
+EdgeDetector.s: EdgeDetector.cpp.s
+
+.PHONY : EdgeDetector.s
+
+# target to generate assembly for a file
+EdgeDetector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab03.dir/build.make CMakeFiles/lab03.dir/EdgeDetector.cpp.s
+.PHONY : EdgeDetector.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -666,6 +693,9 @@ help:
 	@echo "... Convolution.o"
 	@echo "... Convolution.i"
 	@echo "... Convolution.s"
+	@echo "... EdgeDetector.o"
+	@echo "... EdgeDetector.i"
+	@echo "... EdgeDetector.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

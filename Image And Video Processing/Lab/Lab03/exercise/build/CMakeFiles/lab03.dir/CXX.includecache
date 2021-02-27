@@ -38,6 +38,18 @@ list
 algorithm
 -
 
+/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/EdgeDetector.h
+iostream
+-
+opencv2/opencv.hpp
+-
+opencv2/highgui.hpp
+-
+opencv2/core/core.hpp
+-
+math.h
+-
+
 /Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/main.cpp
 iostream
 -
@@ -45,6 +57,8 @@ Blur.h
 /Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/Blur.h
 Convolution.h
 /Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/Convolution.h
+EdgeDetector.h
+/Users/lap14153/Documents/study/digital-image-processing/Image And Video Processing/Lab/Lab03/exercise/EdgeDetector.h
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp
